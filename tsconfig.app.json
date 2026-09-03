@@ -1,0 +1,28 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "paths": {
+      /* 
+      Алиас путей для TypeScript.
+      Указывает, что символ '@' соответствует папке 'src'.
+      Должен строго совпадать с настройкой alias в vite.config.ts 
+    */
+      "@/*": ["./src/*"]
+    },
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "types": ["vite/client"],
+    "allowArbitraryExtensions": true,
+
+    /* Включает базовый набор строгих проверок типов (strictNullChecks, noImplicitAny и др.) */
+    "strict": true,
+    /* Дополнительно требует проверять доступ по индексу на undefined */
+    "noUncheckedIndexedAccess": true,
+
+    /* Linting */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+}
