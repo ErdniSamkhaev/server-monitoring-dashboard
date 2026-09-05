@@ -1,5 +1,23 @@
-# Vue 3 + TypeScript + Vite
+# Server Monitoring Dashboard
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Панель мониторинга серверов: список машин, их состояние и детальная страница по каждой.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+**Демо:** https://servermonit.netlify.app/
+
+## Стек
+
+Vue 3 (`<script setup>`) · TypeScript · Vite · Vue Router · Pinia · Vitest · ESLint + Prettier
+
+## Скрипты
+
+| Команда | Что делает |
+| --- | --- |
+| `npm run dev` | Дев-сервер |
+| `npm run build` | Проверка типов и сборка в `dist/` |
+| `npm run type-check` | Только проверка типов |
+| `npm run lint` | ESLint с автоисправлением |
+| `npm run lint:check` | ESLint без правок (используется в CI) |
+| `npm run test` | Тесты Vitest |
+
+## Архитектура
+
