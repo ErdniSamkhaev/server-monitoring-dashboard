@@ -27,6 +27,7 @@ export default [
       'import-x': importX,
     },
     settings: {
+      // требует, чтобы импорты шли сгруппированно и в заданном порядке. Порядок задан тут в groups
       'import-x/resolver': {
         typescript: {
           project: './tsconfig.app.json', // tsconfig, где прописаны paths
