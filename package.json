@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint . --fix",
     "lint:check": "eslint .",
+    "type-check": "vue-tsc --build",
     "format": "prettier --write src/",
     "test": "vitest run"
   },
